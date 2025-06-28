@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+  <h2>Ingresa tu nombre:</h2>
+  <form action="{{ url_for('saludo') }}" method="POST">
+    <input type="text" name="nombre" placeholder="Tu nombre" required>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
